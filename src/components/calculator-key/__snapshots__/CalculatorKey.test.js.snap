@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CalculatorKey /> set a label and create a snapshot from it 1`] = `ShallowWrapper {}`;
