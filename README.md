@@ -2,7 +2,7 @@
 
 ### Problem:
 
-Create a basic calculator, using react js, use TDD principles and test coverage
+Create a basic calculator, using react js, use TDD principles and full test coverage
 
 ### Envirnment:
   node version 11.14.0
