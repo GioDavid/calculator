@@ -1,19 +1,19 @@
-###Basic Calculator React JS 
+### Basic Calculator React JS 
 
-##Problem:
+## Problem:
 
 Create a basic calculator, using react js, use TDD principles and test coverage
 
-##Envirnment:
+## Envirnment:
   node version 11.14.0
   react js version 16.8.6
 
 
-##Application execution:
+## Application execution:
   If you run this app for the first time use `npm install`
   After that use `npm run start`
   
-##Test execution:
+## Test execution:
 
 	Use npm run test` or only `npm test`
 
