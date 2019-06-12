@@ -7,7 +7,7 @@ describe("<Calculator />", () => {
 
     it("create a snapshot with the basic information", () => {
     
-      const wrapper = shallow(<CalculatorKey {...props} />);
+      const wrapper = shallow(<Calculator />);
       expect(wrapper).toMatchSnapshot();
     });
   });
