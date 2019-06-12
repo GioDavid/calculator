@@ -14,5 +14,17 @@ describe("<CalculatorKey />", () => {
       const wrapper = shallow(<CalculatorKey {...props} />);
       expect(wrapper).toMatchSnapshot();
     });
+
+    it("simulate a click in button and send label", () => {
+      const props = {
+        label: "+",
+        onbuttonClicked: mockOnbuttonClicked
+      };
+      const wrapper = shallow(<CalculatorKey {...props} />);
+      wrapper
+      .find("button")
+      .simulate("click");
+    expect(mockOnbuttonClicked).toHaveBeenCalledWith("+");
+    });
   });
   

@@ -1,4 +1,5 @@
 import React from "react";
+import "./CalculatorKey.css";
 
 export default class CalculatorKey extends React.Component {
 
@@ -8,10 +9,10 @@ export default class CalculatorKey extends React.Component {
   }
 
   render() {
-    const { label, onbuttonClicked } = this.props;
+    const { label } = this.props;
 
     return (
-      <button onClick={this.buttonClicked}>{label}</button>
+      <button className="button" onClick={this.buttonClicked}>{label}</button>
     );
   }
 }

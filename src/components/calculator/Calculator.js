@@ -1,6 +1,7 @@
 import React from "react";
 import CalculatorKey from "../calculator-key/CalculatorKey";
-import { divide, multiply, sum, substract } from "../../operations/operations"
+import { divide, multiply, sum, substract } from "../../operations/operations";
+import "./Calculator.css";
 
 export default class Calculator extends React.Component {
     constructor(props) {
@@ -37,7 +38,10 @@ export default class Calculator extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="main-container">
+                <div>
+                        <label>Result:  {this.state.accumulator}</label>
+                    </div>
                 <div className="operation-area">
                     <CalculatorKey label="+" onbuttonClicked={this.onOperationClicked} />
                     <CalculatorKey label="-" onbuttonClicked={this.onOperationClicked} />
@@ -57,11 +61,7 @@ export default class Calculator extends React.Component {
                         <CalculatorKey label="7" onbuttonClicked={this.onOperationClicked} />
                         <CalculatorKey label="8" onbuttonClicked={this.onOperationClicked} />
                         <CalculatorKey label="9" onbuttonClicked={this.onOperationClicked} />
-                    </div>
-                    <div>
-                        <CalculatorKey label="C" onbuttonClicked={this.onOperationClicked} />
                         <CalculatorKey label="0" onbuttonClicked={this.onOperationClicked} />
-                        <label>Result:  {this.state.accumulator}</label>
                     </div>
                 </div>
             </div>
